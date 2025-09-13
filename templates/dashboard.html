@@ -1,0 +1,8 @@
+<h1>Dashboard</h1>
+<a href="/study_plan">View Study Plan</a>
+<h3>Syllabus Topics:</h3>
+<ul>
+  {% for topic in syllabus %}
+    <li><a href="/practice/{{ topic.topic }}">{{ topic.topic }}</a></li>
+  {% endfor %}
+</ul>
